@@ -28,5 +28,15 @@ namespace StrategyPattern
         {
             Console.WriteLine("All ducks can swin, even decoy toys!");
         }
+
+        public void SetFlyBehavior(IFlyBehavior flyBehavior)
+        {
+            _flyBehavior = flyBehavior;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior quackBehavior)
+        {
+            _quackBehavior = quackBehavior;
+        }
     }
 }
