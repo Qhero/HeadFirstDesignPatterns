@@ -4,8 +4,8 @@ namespace StrategyPattern
 {
     public abstract class Duck
     {
-        private IFlyBehavior _flyBehavior;
-        private IQuackBehavior _quackBehavior;
+        protected IFlyBehavior _flyBehavior;
+        protected IQuackBehavior _quackBehavior;
 
         public Duck()
         {

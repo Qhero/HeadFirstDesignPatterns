@@ -2,11 +2,11 @@
 
 namespace StrategyPattern.Behaviors
 {
-    public class FlyWithWings : IFlyBehavior
+    public class FlyNoWay : IFlyBehavior
     {
         public void Fly()
         {
-            Console.WriteLine("I'm flying!!!");
+            Console.WriteLine("I can't fly...");
         }
     }
 }
