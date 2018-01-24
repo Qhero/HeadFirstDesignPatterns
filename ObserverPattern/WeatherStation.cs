@@ -12,6 +12,7 @@ namespace ObserverPattern
             var currentDisplay = new CurrentConditionDisplay(weatherData);
             var forecastDisplay = new ForecastDisplay(weatherData);
             var statsDisplay = new StatisticsDisplay(weatherData);
+            var heatIndexDisplay = new HeatIndexDisplay(weatherData);
 
             //simulating sending data 
             weatherData.SetMeasurements(20.1f, 70, 104.2f);

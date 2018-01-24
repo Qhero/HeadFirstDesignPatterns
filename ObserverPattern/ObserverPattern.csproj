@@ -44,7 +44,9 @@
   <ItemGroup>
     <Compile Include="Business\CurrentConditionDisplay.cs" />
     <Compile Include="Business\ForecastDisplay.cs" />
+    <Compile Include="Business\HeatIndexDisplay.cs" />
     <Compile Include="Business\StatisticsDisplay.cs" />
+    <Compile Include="Helper\TemperatureConverter.cs" />
     <Compile Include="Interfaces\IDisplayElement.cs" />
     <Compile Include="Interfaces\IObserver.cs" />
     <Compile Include="Interfaces\ISubject.cs" />
@@ -55,6 +57,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="heatindex_formula.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
