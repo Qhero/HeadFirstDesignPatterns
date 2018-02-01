@@ -9,18 +9,24 @@ namespace ObserverPattern
         private float _temperature;
         private float _humidity;
         private float _pressure;
+        private bool _changed = false;
 
         public WeatherData()
         {
             _observers = new List<IObserver>();
         }
 
+        #region Subject implementation
         public void NotifyObservers()
         {
-            foreach (var obv in _observers)
+            if (_changed)
             {
-                obv.Update(_temperature, _humidity, _pressure);
+                foreach (var obv in _observers)
+                {
+                    obv.Update(_temperature, _humidity, _pressure);
+                }
             }
+            _changed = false;
         }
 
         public void RegisterObserver(IObserver o)
@@ -35,9 +41,11 @@ namespace ObserverPattern
             if (i >= 0)
                 _observers.Remove(o);
         }
+        #endregion
 
         public void MeasurementChanged()
         {
+            SetChanged();
             NotifyObservers();
         }
 
@@ -53,6 +61,11 @@ namespace ObserverPattern
             this._humidity = humidity;
             this._pressure = pressure;
             MeasurementChanged();
+        }
+
+        private void SetChanged()
+        {
+            _changed = true;
         }
     }
 }

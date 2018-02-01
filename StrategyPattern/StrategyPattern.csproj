@@ -53,7 +53,7 @@
     <Compile Include="Entities\ModelDuck.cs" />
     <Compile Include="Interfaces\IQuackBehavior.cs" />
     <Compile Include="Interfaces\IFlyBehavior.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="SimulatorDuck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
