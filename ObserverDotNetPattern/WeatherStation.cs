@@ -1,5 +1,4 @@
 ﻿using ObserverDotNetPattern.Business;
-using ObserverDotNetPattern.Entities;
 using System;
 
 namespace ObserverDotNetPattern
