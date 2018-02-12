@@ -18,7 +18,17 @@ namespace DecoratorPattern.Decorator
         /// <returns></returns>
         public override String GetDescription()
         {
-            return this._beverage.GetDescription();
+            return _beverage.GetDescription();
+        }
+
+        public override Size GetSize()
+        {
+            return _beverage.GetSize();
+        }
+
+        public override void SetSize(Size size)
+        {
+            _beverage.SetSize(size);
         }
     }
 }
