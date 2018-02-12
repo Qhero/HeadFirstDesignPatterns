@@ -32,8 +32,11 @@ Other links for the book are available on the book page at <a href="http://www.w
 "Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically."
 
 # Decorator Pattern
+
+"Attach to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionnality."
+
+# Factory Pattern
+
 coming soon...
-
-
 
 <u>sources:</u> <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/object-oriented-programming">docs.microsoft.com</a> and <a href="http://www.wickedlysmart.com/head-first-design-patterns/">Head First Design Patterns book</a>
